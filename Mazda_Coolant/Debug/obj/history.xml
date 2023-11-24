@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F103C8 -DSTM32F10X_MD -IE:\CAN-Projects\Mazda_Coolant\1.0.0\stm_lib -IE:\CAN-Projects\Mazda_Coolant\1.0.0\stm_lib\inc -IE:\CAN-Projects\Mazda_Coolant\1.0.0\can -IE:\CAN-Projects\Mazda_Coolant\1.0.0\ssd1306 -IE:\CAN-Projects\Mazda_Coolant -IE:\CAN-Projects\Mazda_Coolant\1.0.0\cmsis -IE:\CAN-Projects\Mazda_Coolant\1.0.0 -IE:\CAN-Projects\Mazda_Coolant\1.0.0\cmsis_boot">
+      <target file="stm32f10x_can.o" lastModified="18bfdfd785d">
+         <source file="..\..\..\stm_lib\src\stm32f10x_can.c" lastModified="160466dc070"/>
+      </target>
+      <target file="syscalls.o" lastModified="18bfdfd7bef">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="152a8ccfb40"/>
+      </target>
+      <target file="can.o" lastModified="18bfdfd79fa">
+         <source file="..\..\..\can\can.c" lastModified="18bfdfc1621"/>
+      </target>
+      <target file="ssd1306.o" lastModified="18bfdfd7d37">
+         <source file="..\..\..\ssd1306\ssd1306.c" lastModified="18bf0ddd681"/>
+      </target>
+      <target file="stm32f10x_tim.o" lastModified="18bfdfd76d0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="1651f608006"/>
+      </target>
+      <target file="stm32f10x_i2c.o" lastModified="18bfdfd7dbe">
+         <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="152a3a6f530"/>
+      </target>
+      <target file="core_cm3.o" lastModified="18bfdfd7721">
+         <source file="..\..\..\cmsis\core_cm3.c" lastModified="15264efacd8"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="18bfdfd777a">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="152a8cf2208"/>
+      </target>
+      <target file="fonts.o" lastModified="18bfdfd7b1c">
+         <source file="..\..\..\ssd1306\fonts.c" lastModified="152a7b4f7a8"/>
+      </target>
+      <target file="main.o" lastModified="18bfdfd796d">
+         <source file="..\..\..\main.c" lastModified="18bfde92b5e"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="18bfdfd7b97">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="152a3a704d0"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="18bfdfd78e1">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="152a3a6ddc0"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="18bfdfd7a8a">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="152a3a61a70"/>
+      </target>
+      <target file="startup_stm32f10x_md.o" lastModified="18bfdfd77b8">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="152a8cf1650"/>
+      </target>
+      <target file="misc.o" lastModified="18bfdfd7c97">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="160466dc070"/>
+      </target>
+      <target file="ssd1306_i2c.o" lastModified="18bfdfd7c50">
+         <source file="..\..\..\ssd1306\ssd1306_i2c.c" lastModified="17052a8914e"/>
+      </target>
+   </processor>
+</history>

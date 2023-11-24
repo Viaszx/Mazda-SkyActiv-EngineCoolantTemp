@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=Mazda_Coolant.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Mazda_Coolant -TC:\CooCox\CoIDE\configuration\ProgramData\Mazda_Coolant/arm-gcc-link.ld -g">
+      <target file="Mazda_Coolant.elf" lastModified="18bfdfd7faf">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="18bfdfd76d0"/>
+         <source file="..\obj\core_cm3.o" lastModified="18bfdfd7721"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="18bfdfd777a"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="18bfdfd77b8"/>
+         <source file="..\obj\stm32f10x_can.o" lastModified="18bfdfd785d"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="18bfdfd78e1"/>
+         <source file="..\obj\main.o" lastModified="18bfdfd796d"/>
+         <source file="..\obj\can.o" lastModified="18bfdfd79fa"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="18bfdfd7a8a"/>
+         <source file="..\obj\fonts.o" lastModified="18bfdfd7b1c"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="18bfdfd7b97"/>
+         <source file="..\obj\syscalls.o" lastModified="18bfdfd7bef"/>
+         <source file="..\obj\ssd1306_i2c.o" lastModified="18bfdfd7c50"/>
+         <source file="..\obj\misc.o" lastModified="18bfdfd7c97"/>
+         <source file="..\obj\ssd1306.o" lastModified="18bfdfd7d37"/>
+         <source file="..\obj\stm32f10x_i2c.o" lastModified="18bfdfd7dbe"/>
+      </target>
+   </processor>
+</history>
