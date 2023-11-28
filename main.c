@@ -1,6 +1,6 @@
 /*
   **********************************************************************************
-  * @title		can.h
+  * @title		main.c
   * @platform	STM32F103
   * @author		Anton Novikov
   * @version	V1.0.0
@@ -46,6 +46,9 @@ int time_togle_1ms_old = 0;								// Previous value of the toggle flag.
 tpTimer timer_10000x100ms[10] = {{false, false, 0}};	// Array of timers with a 10000 x 100 ms interval.
 int time_togle_100ms = 0;  								// Flag toggled every 100 milliseconds.
 int time_togle_100ms_old = 0;							// Previous value of the toggle flag.
+
+void SSD1306_ON(void);
+uint8_t ssd1306_I2C_IsDeviceConnected(I2C_TypeDef* I2Cx, uint8_t address);
 
 // Program execution delay.
 // The function uses a variable of volatile type to prevent compiler optimization.
