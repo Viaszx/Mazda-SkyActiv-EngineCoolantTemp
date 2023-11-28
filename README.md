@@ -31,7 +31,7 @@ The [S13V30F5][pololu-V30-url] is an advanced version with reverse voltage prote
 | STM32F103C8T6 | SSD1306       | MCP2551 | Resistor | Voltage Regulator | OBD2 |
 |---------------|---------------|---------|----------|-------------------|------|
 | 5V            |               | VDD     |          | VOUT              |      |
-| 3.3V          | 3.3V          |         |          |                   |      |
+| 3.3V          | VCC           |         |          |                   |      |
 | GND           | GND           | VSS     | R1       | GND               | 4-5  |
 | B6            | SLC           |         |          |                   |      |
 | B7            | SDA           |         |          |                   |      |
@@ -57,6 +57,14 @@ In `can.h`, the bus speed is configured for 500 Kb. The values are calculated fo
 ```c
 #define CAN1_SPEED_PRESCALE 9
 ```
+It is important to keep in mind that if the frequency is changed, the time quanta must be recalculated:
+
+CAN_BS1_3tq means that the phase of BS1 (first part of the bit) will be 3 time quanta.
+
+CAN_BS2_4tq means that the phase of BS2 (second part of the bit) will be 4 time quanta.
+
+These values are used to set the bit segments in the CAN frame and affect the baud rate of the CAN bus.
+The values CAN_BS1 and CAN_BS2 can be selected depending on the required baud rate to ensure correct synchronization and minimize possible errors on the CAN bus.
 
 ## SSD1306 Display Driver
 
