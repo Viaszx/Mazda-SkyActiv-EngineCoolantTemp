@@ -33,7 +33,7 @@
 #define ssd1306_I2C_TIMEOUT					20000
 #endif
 
-
+uint8_t ssd1306_I2C_IsDeviceConnected(I2C_TypeDef* I2Cx, uint8_t address);
 void ssd1306_I2C_Init();
 
 /**
